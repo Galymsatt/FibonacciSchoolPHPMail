@@ -13,13 +13,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 	    'Reply-To: fibonaccisch@gmail.com' . "\r\n" .
 	    'X-Mailer: PHP/' . phpversion();
 
-	mail($to, $subject, $message, $headers);
+	
 
 
-    if (empty($name)) {
+    if (mail($to, $subject, $message, $headers)) {
+    	echo "successs";
+    } 
+    else {
         echo "Name is empty";
-    } else {
-        echo "success";
     }
 }
 ?>
