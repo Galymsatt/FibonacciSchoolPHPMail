@@ -10,10 +10,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     $to      = 'galymsatt@gmail.com';
 	$subject = 'Новая заявка';
-	$message = 'Registration date: ' . regDate . 
-				"\nName: " . name .
-				"\nNumber: " . num .
-				"\nCourse name: " . courseName;
+	$message = 'Registration date: ' . $regDate . 
+				"\nName: " . $name .
+				"\nNumber: " . $num .
+				"\nCourse name: " . $courseName;
 	
 
 
