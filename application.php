@@ -9,10 +9,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $to      = 'galymsatt@gmail.com';
 	$subject = 'Новая заявка';
 	$message = 'hello';
-	$headers = 'From: fibonaccischool@fibonacci-school.kz' . "\r\n" .
-	    'Reply-To: fibonaccisch@gmail.com' . "\r\n" .
-	    'X-Mailer: PHP/' . phpversion();
+	// $headers = 'From: fibonaccischool@fibonacci-school.kz' . "\r\n" .
+	//     'Reply-To: fibonaccisch@gmail.com' . "\r\n" .
+	//     'X-Mailer: PHP/' . phpversion();
 
+	$from = "fibonaccischool@fibonacci-school.kz";
+	$headers = "From:" . $from;
 	
 
 
