@@ -34,19 +34,6 @@ function submitForm(){
     });
 
 
-    $.ajax({
-        type: "POST",
-        url: "application.php",
-        data: "name=FIRST TESSST",
-        success: function(text) {
-            if (text == "success") {
-                formSuccess();
-            } else {
-                formError();
-                submitMSG(false, text);
-            }
-        }
-    });
 }
 
 function formSuccess(){
