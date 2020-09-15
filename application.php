@@ -9,7 +9,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $to      = 'galymsatt@gmail.com';
 	$subject = 'Новая заявка';
 	$message = 'hello';
-	$headers = 'From: fibonaccisch@gmail.com' . "\r\n" .
+	$headers = 'From: fibonaccischool@fibonacci-school.kz' . "\r\n" .
 	    'Reply-To: fibonaccisch@gmail.com' . "\r\n" .
 	    'X-Mailer: PHP/' . phpversion();
 
