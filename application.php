@@ -5,10 +5,18 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $num = $_POST['num'];
     $courseName = $_POST['courseName'];
 
+	date_default_timezone_set('UTC+6');
+    $regDate = date("Y-m-d H:i:s");
 
     $to      = 'galymsatt@gmail.com';
 	$subject = 'Новая заявка';
-	$message = 'hello';
+	$message = 'Registration date: ' . regDate . 
+				"\nName: " . name .
+				"\nNumber: " . num .
+				"\nCourse name: " . courseName;
+	
+
+
 	// $headers = 'From: fibonaccischool@fibonacci-school.kz' . "\r\n" .
 	//     'Reply-To: fibonaccisch@gmail.com' . "\r\n" .
 	//     'X-Mailer: PHP/' . phpversion();
@@ -22,7 +30,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     	echo "successs";
     } 
     else {
-        echo "Name is empty";
+        echo "Went wrong...";
     }
 }
 ?>
