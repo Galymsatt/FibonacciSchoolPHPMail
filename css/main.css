@@ -401,7 +401,7 @@ button:focus {
   font-size: 16px;
   padding: 8px 0px;
   margin-left: 26px;
-  font-family: 'Poppins', sans-serif;
+  /*font-family: 'Poppins', sans-serif;*/
   position: relative;
   font-weight: 500; }
 
@@ -870,8 +870,8 @@ button:focus {
       color: #151948;
       font-size: 18px; }
     #testimonial #client-testimonial h5 span {
-      font-size: 16px;
-      color: #5e629c;
+      font-size: 18px;
+      color: #151948;
       font-style: italic; }
     #testimonial #client-testimonial .owl-controls .owl-buttons div.owl-prev {
       color: #3ecf8e;
