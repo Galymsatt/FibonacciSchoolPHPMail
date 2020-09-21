@@ -27,7 +27,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 
     if (mail($to, $subject, $message, $headers)) {
-    	echo "successs";
+    	echo "success";
     } 
     else {
         echo "Went wrong...";
